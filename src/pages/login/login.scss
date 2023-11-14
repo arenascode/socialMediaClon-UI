@@ -1,0 +1,99 @@
+.login {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(193, 190, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .card {
+    width: 50%;
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+
+    .left {
+      flex: 1;
+      background: linear-gradient(rgba(39, 11, 96, 0.5), rgba(39, 11, 96, 0.5)),
+        url("https://images.pexels.com/photos/19118634/pexels-photo-19118634/free-photo-of-ligero-ciudad-puesta-de-sol-arte.jpeg"),
+        center;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      color: white;
+      padding: 30px;
+      gap: 10px;
+      display: flex;
+      h1 {
+        margin: 0;
+        font-size: 50px;
+        line-height: 60px;
+      }
+      p {
+      }
+      span {
+        font-size: 14px;
+      }
+      button {
+        width: 50%;
+        padding: 5px;
+
+        color: rebeccapurple;
+        font-weight: bold;
+        border: none;
+        border-radius: 30px;
+        transition-property: scale;
+        transition-duration: 0.2s;
+
+        &:hover {
+          cursor: pointer;
+          scale: 1.02;
+          background: linear-gradient(to right, rebeccapurple, #9a78ab);
+          color: white;
+        }
+      }
+    }
+
+    .right {
+      flex: 1;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      justify-content: center;
+      h1 {
+        margin: 0px;
+        color: #555;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        input[type="text"] {
+          border: none;
+          border-bottom: 1px solid lightgray;
+        }
+        input[type="password"] {
+          border: none;
+          border-bottom: 1px solid lightgray;
+        }
+        button {
+          width: 50%;
+          padding: 5px;
+          border: none;
+          background: linear-gradient(to right, rebeccapurple, #9a78ab);
+          border-radius: 30px;
+          font-weight: bold;
+          color: white;
+          &:hover {
+            cursor: pointer;
+            scale: 1.02;
+            background: white;
+            color: rebeccapurple;
+          }
+        }
+      }
+    }
+  }
+}
