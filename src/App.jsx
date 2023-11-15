@@ -10,7 +10,7 @@ import Home from "./pages/home/Home.jsx"
 
 function App() {
   
-  const currentUser = false;
+  const currentUser = true;
 
   const Layout = () => {
     return (
@@ -18,7 +18,9 @@ function App() {
         <NavBar />
         <div style={{ display: "flex" }}>
           <LeftBar />
-          {/* <Outlet /> */}
+          <div style={{flex:6}}>
+          <Home />
+          </div>
           <RightBar />
         </div>
       </div>
