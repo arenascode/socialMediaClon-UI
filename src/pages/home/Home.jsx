@@ -1,8 +1,12 @@
+import Posts from "../../components/posts/Posts.jsx";
+import Stories from "../../components/stories/Stories.jsx";
 import "./home.scss"
 
 const Home = () => {
   return (
-    <div className="home">Home</div>
-  )
+  <div className="home">
+    <Stories/>
+    <Posts/>
+  </div>);
 }
 export default Home
